@@ -1,0 +1,14 @@
+{
+  "name": "the-travelers-compendium",
+  "version": "1.0.0",
+  "description": "A personal project to create a SPA for all the info you'll need for new players to DnD 5th Edition.",
+  "author": "David Ortiz",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.3",
+    "pg": "^8.11.0"
+  }
+}
