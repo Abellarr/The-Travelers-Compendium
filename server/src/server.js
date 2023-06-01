@@ -1,3 +1,4 @@
+//------------------------------  BOILERPLATE/VARIABLES  ------------------------------//
 import * as dotenv from "dotenv";
 dotenv.config();
 import express from "express";
@@ -27,6 +28,8 @@ app.use((req, res, next) => {
 //------------------------------  ROUTES  ------------------------------//
 
 
+
+//------------------------------  LISTENING  ------------------------------//
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
   });
