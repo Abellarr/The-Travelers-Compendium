@@ -1,16 +1,16 @@
 import React, { useContext } from 'react';
 import AppContext from '../Context/AppContext';
-import HomePage from './HomePage.jsx';
+import UnderConstruction from './UnderConstruction.jsx';
 // import '../../styles/Navbar';
 
-const Body = () => {
+const HomePage = () => {
 
 
     return (
-        <div className='Body'>
-            <HomePage />
+        <div>
+            <UnderConstruction />
         </div>
     )
 }
 
-export default Body;
+export default HomePage;

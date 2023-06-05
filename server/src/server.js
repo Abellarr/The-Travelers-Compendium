@@ -3,6 +3,8 @@ import * as dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 import pg from "pg";
+import bcrypt from 'bcryptjs';
+import jwt from "jsonwebtoken";
 
 const app = express();
 app.use(express.json());

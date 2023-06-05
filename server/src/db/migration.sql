@@ -46,7 +46,7 @@ CREATE TABLE custom_wondrous (
 
 DROP TABLE IF EXISTS custom_rp_npc;
 
-CREATE TABLE custom_npc (
+CREATE TABLE custom_rp_npc (
     id SERIAL PRIMARY KEY,
     name TEXT,
     race TEXT,
