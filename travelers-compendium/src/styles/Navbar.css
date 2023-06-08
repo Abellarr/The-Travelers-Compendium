@@ -1,0 +1,28 @@
+.mainNavBar {
+    display: inline-block;
+    background-color: brown;
+    width: 100%;
+    height: 8vh;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.mainTitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navBarButtons {
+    width: 100%;
+    /* background-color: rgb(38, 94, 143); */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navButton {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.navButton:hover {
+    color: white;
+}

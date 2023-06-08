@@ -6,16 +6,16 @@ const Navbar = () => {
 
 
     return (
-        <div>
-            <h1>The Traveler's Compendium</h1>
-            <div>
-                <button>Character Info</button>
-                <button>Races/Classes</button>
-                <button>Equipment/Items</button>
-                <button>Magic</button>
-                <button>Monsters</button>
-                <button>NPCs</button>
-                <button>Rules/Gameplay</button>
+        <div className='mainNavBar'>
+            <h1 className='mainTitle'>The Traveler's Compendium</h1>
+            <div className='navBarButtons'>
+                <button className='navButton'>Character Info</button>
+                <button className='navButton'>Races/Classes</button>
+                <button className='navButton'>Equipment/Items</button>
+                <button className='navButton'>Magic</button>
+                <button className='navButton'>Monsters</button>
+                <button className='navButton'>NPCs</button>
+                <button className='navButton'>Rules/Gameplay</button>
             </div>
         </div>
     )
