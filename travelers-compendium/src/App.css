@@ -1,7 +1,12 @@
 #root {
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: blueviolet;
+  margin: 0;
+  padding: 0;
+  /* background-color: blueviolet; */
   text-align: center;
+}
+
+.underConstructionImg {
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  opacity: 1;
 }
 

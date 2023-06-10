@@ -1,6 +1,11 @@
+body {
+  margin: 0;
+}
 
 :root {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  background-image: url('https://i.imgur.com/QrLSPUv.jpeg');
+  padding: 0;
 }
 
 /* :root {
