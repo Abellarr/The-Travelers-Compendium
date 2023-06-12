@@ -21,9 +21,16 @@
 }
 
 .navButtonContainer {
-    width: 20%;
+    box-sizing: inherit;
+    width: 25%;
     display: block;
     float: left;
+}
+
+.navButtonContainer p {
+    font-family: sans-serif;
+    font-size: larger;
+    cursor: pointer;
 }
 
 .navBarButtons {
@@ -37,17 +44,29 @@
 
 .navButton {
     /* border: 2px solid black; */
+    box-sizing: border-box;
     background-color: rgb(10, 153, 185);
     width: 100%;
-    padding: 5px 20px;
+    padding: 5px 10px;
     font-family: 'Noto Serif', serif;
     font-weight: bold;
     font-size: 175%;
-    margin: 2vh 0vh;
-    box-shadow: 7px 7px 4px 0px rgba(0,0,0,0.6);
+    transition: 0.3s;
+    /* margin: 2vh 0vh; */
+    /* box-shadow: 7px 7px 4px 0px rgba(0,0,0,0.6); */
 }
 
 .navButton:hover {
     color: white;
     cursor: pointer;
+    background-color: rgb(11, 96, 115);
+}
+
+.navButtonPanel {
+    width: 100%;
+    /* padding: 0 18px; */
+    background-color: rgba(61, 249, 186, 0.4);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
