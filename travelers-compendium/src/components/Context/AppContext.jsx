@@ -4,7 +4,7 @@ const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [cohort, setCohort] = useState(null);
-  const [bodyDisplay, setBodyDisplay] = useState(null);
+  const [bodyDisplay, setBodyDisplay] = useState('home');
 
   return (
     <AppContext.Provider

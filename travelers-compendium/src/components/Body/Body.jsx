@@ -4,11 +4,11 @@ import HomePage from './HomePage.jsx';
 // import '../../styles/Navbar';
 
 const Body = () => {
-
+    const { bodyDisplay } = useContext(AppContext);
 
     return (
         <div className='Body'>
-            <HomePage />
+            {bodyDisplay === 'home' ? <HomePage /> : null}
         </div>
     )
 }
