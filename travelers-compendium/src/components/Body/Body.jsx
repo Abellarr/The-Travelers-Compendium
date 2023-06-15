@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AppContext from '../Context/AppContext';
 import HomePage from './HomePage.jsx';
-// import '../../styles/Navbar';
+import '../../styles/Body.css';
 
 const Body = () => {
     const { bodyDisplay } = useContext(AppContext);
