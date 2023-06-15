@@ -6,9 +6,9 @@
     /* background-color: rgb(27, 220, 117); */
     background-image: url('../../public/Header.png');
     width: 100%;
-    height: 22vh;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
+    /* height: 22vh; */
+    background-size: 100%;
+    background-repeat: no-repeat;
     /* border: 2px solid black; */
     /* border-radius: 10px; */
     font-size: 1.25em;
@@ -24,9 +24,21 @@
     width: 100%;
 }
 
+.navBarLogo {
+    float: left;
+    width: 12%;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.navBarLogo:hover {
+    scale: 110%;
+    transition: scale 0.2s;
+}
+
 .navButtonContainer {
     box-sizing: inherit;
-    width: 15%;
+    width: 20%;
     height: 100vh;
     display: block;
     float: left;
