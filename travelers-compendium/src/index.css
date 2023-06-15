@@ -1,4 +1,15 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
+  /* background-color: aquamarine; */
+  background-image: url('https://i.imgur.com/QrLSPUv.jpeg');
+  padding: 0;
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -66,4 +77,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

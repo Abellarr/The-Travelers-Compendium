@@ -1,7 +1,10 @@
+//------------------------------  BOILERPLATE/VARIABLES  ------------------------------//
 import * as dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 import pg from "pg";
+import bcrypt from 'bcryptjs';
+import jwt from "jsonwebtoken";
 
 const app = express();
 app.use(express.json());
@@ -27,6 +30,8 @@ app.use((req, res, next) => {
 //------------------------------  ROUTES  ------------------------------//
 
 
+
+//------------------------------  LISTENING  ------------------------------//
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
   });
