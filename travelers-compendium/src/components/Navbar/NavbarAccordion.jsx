@@ -19,7 +19,7 @@ const NavbarAccordion = ({ onHover }) => {
     }
     
     const handleLeave = () => {
-        onHover();
+        document.getElementById('navButtonContainer').style.visibility = 'hidden';
         closeAccordion();
     }
 

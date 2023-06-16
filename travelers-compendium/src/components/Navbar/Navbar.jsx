@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import AppContext from '../Context/AppContext.jsx';
 import NavbarAccordion from './NavbarAccordion.jsx';
 import '../../styles/Navbar.css';
-import Logo from '../../../public/&-logo.png';
+import Logo from '../../assets/&-logo.png';
 
 const Navbar = () => {
     const { setBodyDisplay } = useContext(AppContext)
@@ -10,11 +10,13 @@ const Navbar = () => {
     const handleDisplay = (e) => {
         const bodyId = e.target.id;
         setBodyDisplay(bodyId);
+        document.getElementById('navButtonContainer').style.visibility = 'hidden';
     }
+
 
     const handleHover = (e) => {
         const navButtons = document.getElementById('navButtonContainer');
-        navButtons.style.visibility === 'visible' ? navButtons.style.visibility = 'hidden' : navButtons.style.visibility = 'visible';
+        navButtons.style.visibility === 'hidden' ? navButtons.style.visibility = 'visible' : navButtons.style.visibility = 'hidden';
     }
 
 
