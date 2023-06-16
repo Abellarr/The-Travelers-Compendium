@@ -1,0 +1,37 @@
+.racesMain {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.raceMainContainer {
+    padding: 20px;
+}
+
+.raceMainNames {
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    width: 15%;
+}
+
+.raceTopHeader {
+    text-align: left;
+    margin: 0;
+}
+
+.raceMainCard {
+    /* width: 15%; */
+}
+
+.raceCardDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.raceNames:hover {
+    cursor: pointer;
+}

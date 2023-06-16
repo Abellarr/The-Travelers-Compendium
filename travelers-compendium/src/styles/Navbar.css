@@ -11,12 +11,12 @@
     margin-bottom: 2.5vh;
 }
 
-.mainTitle {
+/* .mainTitle {
     font-family: 'Piazzolla', serif;
     margin: 1vh 0vh;
     font-size: 2.5em;
     width: 100%;
-}
+} */
 
 .navBarLogo {
     float: left;
@@ -91,7 +91,7 @@
     font-size: 110%;
     text-align: left;
     padding-left: 20px;
-    background-color: rgba(227, 184, 109, 0.5);
+    background-color: rgb(244, 231, 138);
     border: 1px solid black;
     border-radius: 3px;
     max-height: 0;

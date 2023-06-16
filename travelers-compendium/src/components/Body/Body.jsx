@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AppContext from '../Context/AppContext';
 import HomePage from './HomePage.jsx';
-import Races from './Character/Races';
+import Races from './Character/Races/Races';
 import Classes from './Character/Classes';
 import AbilityScores from './Character/AbilityScores';
 import Skills from './Character/Skills';
