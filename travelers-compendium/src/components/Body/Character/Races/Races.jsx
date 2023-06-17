@@ -1,34 +1,39 @@
 import React, { useContext, useState, useEffect } from 'react';
 import AppContext from '../../../Context/AppContext.jsx';
-import UnderConstruction from '../../UnderConstruction.jsx';
+import RaceContext from '../../../Context/RaceContext.jsx';
+import RacesTopBar from './RacesTopBar.jsx';
+import RacesMain from './RacesMain.jsx';
+import RaceDispContainer from './RaceDispContainer.jsx';
 import '../../../../styles/Character.css';
-import RacesTopBar from './RaceTopBar.jsx';
+
 
 const Races = () => {
-    const [ races, setRaces ] = useState([]);
+    const { races, setRaces, raceDisplay, setRaceDisplay } = useContext(RaceContext)
     const { apiBase } = useContext(AppContext);
+
+    useEffect(() => {
+        (async () => {
+          const response = await fetch(`${apiBase}/api/races`);
+          const raceInfo = await response.json();
+          setRaces(raceInfo.results);
+          console.log(raceInfo.results);
+        })();
+        return () => {};
+      }, []);
 
     return (
         <div className='racesMain'>
-            <RacesTopBar />
-            <div className='raceMainContainer'>
-                <h1 className='raceMainTitle'>Character Races</h1>
-                <h3 className='raceMainIntro'>
-                    Choosing your character's race is an important decision that can affect many aspects of your roleplaying 
-                    experience. Not only can your race provide bonuses to your ability in combat or interacting with the 
-                    environment, it may also affect how other players and non-player characters interact with you.
-                </h3>
-                <h3>
-                    For instance, Dragonborn may rarely be seen in certain parts of your adventuring world, so strolling into 
-                    the local tavern may arouse suspicion or awe in the patrons who frequent there. Or, you may find that the 
-                    elven guard you're trying to get information from may not be that fond of dwarves.
-                </h3>
-                <h3>
-                    For a better gameplay experience, consider all the aspects of who your character is and try not to rely 
-                    solely on any ability or combat boons.
-                </h3>
-            </div>
-            
+            <RacesTopBar races={races} setRaceDisplay={setRaceDisplay} />
+            {raceDisplay === 'home' ? <RacesMain /> : null}
+            {raceDisplay === 'dragonborn' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
+            {raceDisplay === 'dwarf' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
+            {raceDisplay === 'elf' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
+            {raceDisplay === 'gnome' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
+            {raceDisplay === 'half-elf' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
+            {raceDisplay === 'half-orc' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
+            {raceDisplay === 'halfling' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
+            {raceDisplay === 'human' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
+            {raceDisplay === 'tiefling' ? <RaceDispContainer raceDisplay={raceDisplay} />: null}
         </div>
     )
 }

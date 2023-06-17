@@ -1,37 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .racesMain {
     display: inline-block;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .raceMainContainer {
-    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+.raceMainTitle {
+    border-bottom: 6px solid black;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 6em;
+    margin: 10px 0 0 0;
+}
+
+.raceIntro {
+    margin: auto;
+    width: 80%;
+}
+
+.raceIntro h2 {
+    font-size: 1.75em;
+}
+
+.raceMainBonuses {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.25em;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+}
+
+.raceMainBonuses h2 {
+    border-bottom: 4px solid black;
+}
+
+.raceMainBonuses h3 {
+    border-bottom: 2px solid black;
 }
 
 .raceMainNames {
     display: flex;
     flex-direction: column;
     /* margin: auto; */
-    width: 15%;
+    width: 100%;
 }
 
 .raceTopHeader {
+    text-align: center;
+    margin: 0 0 5px 10px;
+}
+
+.raceMainIntro {
     text-align: left;
-    margin: 0;
+    font-family: 'Piazzolla', serif;
+    margin: 20px 0 50px 0;
 }
 
 .raceMainCard {
-    /* width: 15%; */
+    width: 15%;
+    border-radius: 4px;
+    background-color: burlywood;
+    font-family: 'Piazzolla', serif;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    margin: 2px 10px;
+
+}
+
+.raceMainCard:hover {
+    cursor: pointer;
+    scale: 110%;
+    background-color: rgb(130, 83, 27);
+    color: rgb(244, 237, 188);
+    transition: scale 0.2s;
 }
 
 .raceCardDiv {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    border: 1px solid black;
     width: 100%;
-}
-
-.raceNames:hover {
-    cursor: pointer;
 }

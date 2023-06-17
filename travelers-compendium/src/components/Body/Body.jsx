@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import AppContext from '../Context/AppContext';
+import { RaceProvider } from '../Context/RaceContext';
 import HomePage from './HomePage.jsx';
 import Races from './Character/Races/Races';
 import Classes from './Character/Classes';
@@ -31,7 +32,7 @@ const Body = () => {
     return (
         <div className='Body'>
             {bodyDisplay === 'home' ? <HomePage /> : null}
-            {bodyDisplay === 'race' ? <Races /> : null}
+            {bodyDisplay === 'race' ? <RaceProvider><Races /></RaceProvider> : null}
             {bodyDisplay === 'class' ? <Classes /> : null}
             {bodyDisplay === 'ability' ? <AbilityScores /> : null}
             {bodyDisplay === 'skill' ? <Skills /> : null}
