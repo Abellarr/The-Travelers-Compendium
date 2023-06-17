@@ -89,3 +89,23 @@
     text-align: center;
     width: 100%;
 }
+
+.raceInfoContainer {
+    /* display: flex; */
+    /* flex-wrap: grid; */
+    box-sizing: border-box;
+}
+
+.raceInfoTitle {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.raceTraits:hover {
+    cursor: pointer;
+}
+
+.subraceName:hover {
+    cursor: pointer;
+}
