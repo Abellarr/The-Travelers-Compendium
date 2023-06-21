@@ -39,11 +39,19 @@
 }
 
 .raceMainBonuses h2 {
-    border-bottom: 4px solid black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5em;
+    border-bottom: 3px solid black;
 }
 
 .raceMainBonuses h3 {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.25em;
     border-bottom: 2px solid black;
+}
+
+.raceMainBonuses p {
+    font-family: 'Piazzolla', serif;
 }
 
 .raceMainNames {
@@ -101,9 +109,10 @@
 }
 
 .raceInfoContainer h2 {
-    margin: 10px 0;
+    margin: 10px 0 ;
     font-family: 'Piazzolla', serif;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
     text-align: left;
     padding-left: 20px;
 }
@@ -130,14 +139,17 @@
     justify-content: space-evenly;
     box-sizing: inherit;
     padding: 10px;
-    background-color: lightcoral;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.6);
 }
 
 .raceTraits h2 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Piazzolla', serif;
     font-size: 2.5em;
     padding-bottom: 10px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
     width: 100%;
     margin: 0 0 20px 0;
 }
@@ -156,8 +168,10 @@
 .raceAbilities {
     width: 30%;
     box-sizing: inherit;
-    padding: 10px;
-    background-color: brown;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
 }
 
 
@@ -184,60 +198,78 @@
 .raceAlignment {
     width: 46%;
     box-sizing: inherit;
-    padding: 10px;
-    background-color: cadetblue;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
 }
 
 .raceAge {
-    width: 30%;
+    width: 46%;
     box-sizing: inherit;
-    padding: 10px;
-    background-color: aqua;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
 }
 
 .raceSpeed {
     width: 30%;
     box-sizing: inherit;
-    padding: 10px;
-    background-color: chocolate;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
 }
 
 .raceSize {
-    width: 30%;
+    width: 46%;
     box-sizing: inherit;
-    padding: 10px;
-    background-color: greenyellow;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
 }
 
 .raceLanguages {
     width: 46%;
     box-sizing: inherit;
-    padding: 10px;
-    background-color: hotpink;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
 }
 
 .raceSubraces {
-    width: 95%;
+    width: 30%;
     box-sizing: inherit;
-    padding: 10px;
-    background-color: mediumspringgreen;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.6);
 }
 
 .traitCardContainer {
-    width: 40%;
+    width: 90%;
     /* border: 1px solid black; */
-    background-color: bisque;
+    /* background-color: bisque; */
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .traitCardContainer h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0;
     font-family: 'Piazzolla', serif;
     font-size: 1.5em;
-    padding: 0 0 5px 10px;
-    border-bottom: 3px solid black;
-    text-align: left;
+    padding: 0 0 0 15px;
+    border-bottom: 2px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
 }
 
 .traitCardText {
     padding: 10px;
+    margin: 0;
 }

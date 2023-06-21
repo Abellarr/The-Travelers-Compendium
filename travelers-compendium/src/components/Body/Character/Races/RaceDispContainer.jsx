@@ -1,12 +1,15 @@
 import React, { useContext, useState, useEffect } from 'react';
 import AppContext from '../../../Context/AppContext.jsx';
-import '../../../../styles/Races.css';
 import TraitCard from './TraitCard.jsx';
+import Subrace from './Subrace.jsx';
+import '../../../../styles/Races.css';
+
 
 const RaceDispContainer = ({ raceDisplay }) => {
     const [ raceInfo, setRaceInfo ] = useState({});
     const [ traits, setTraits ] = useState([]);
-    const [ abilities, setAbilities ] = useState([])
+    const [ abilities, setAbilities ] = useState([]);
+    const [ subRaceOpen, setSubRaceOpen ] = useState(false)
     const { apiBase } = useContext(AppContext);
 
     useEffect(() => {
@@ -27,7 +30,7 @@ const RaceDispContainer = ({ raceDisplay }) => {
             <div className='raceInfoContainer'>
                 <div className='raceAbilities'>
                     <h2>Ability Score Increase</h2>
-                    <div className='abilityBonuses'>
+                    <div className={raceInfo.index === 'human' ? 'abilityBonuses' : 'abilityBonusesHE'}>
                         {raceInfo.name && raceInfo.ability_bonuses[0] ?
                         abilities.map((ability, ind)=>{
                             return (
@@ -35,18 +38,17 @@ const RaceDispContainer = ({ raceDisplay }) => {
                             )
                         })
                         : null}
-                        {raceInfo.index === 'half-elf' ? <p>+1 to two ability scores of your choice (not Charisma)</p> : null}
+                        {raceInfo.index === 'half-elf' ? <p>+1 to two ability scores of your choice <br></br>(not Charisma)</p> : null}
                     </div>
+                </div>
+                <div className='raceSubraces'>
+                    <h2>Subraces</h2>
+                    {raceInfo.name && raceInfo.subraces[0] ? <p className='subraceName'>{raceInfo.subraces[0].name}</p> : <p>None</p>}
+                    <Subrace sub={raceInfo.subraces[0]} subRaceOpen={subRaceOpen} setSubRaceOpen={setSubRaceOpen} />
+                </div>
+                <div className='raceSpeed'>
                     <h2>Speed</h2>
                     <p>Your base walking speed is {raceInfo.speed} feet</p>
-                </div>
-                <div className='raceAge'>
-                    <h2>Age</h2>
-                    <p>{raceInfo.age}</p>
-                </div>
-                <div className='raceSize'>
-                    <h2>Size</h2>
-                    <p><b>{raceInfo.size}</b>. {raceInfo.size_description}</p>
                 </div>
                 <div className='raceAlignment'>
                     <h2>Alignment</h2>
@@ -56,9 +58,13 @@ const RaceDispContainer = ({ raceDisplay }) => {
                     <h2>Languages</h2>
                     <p>{raceInfo.language_desc}</p>
                 </div>
-                <div className='raceSubraces'>
-                    <h2>Subraces</h2>
-                    {raceInfo.name && raceInfo.subraces[0] ? <p className='subraceName'>{raceInfo.subraces[0].name}</p> : <p>None</p>}
+                <div className='raceAge'>
+                    <h2>Age</h2>
+                    <p>{raceInfo.age}</p>
+                </div>
+                <div className='raceSize'>
+                    <h2>Size</h2>
+                    <p><b>{raceInfo.size}</b>. {raceInfo.size_description}</p>
                 </div>
                 <div className='raceTraits'>
                     <h2>Traits</h2>
