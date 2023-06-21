@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import AppContext from '../../../Context/AppContext.jsx';
-import '../../../../styles/Character.css';
+import '../../../../styles/Races.css';
 
 const RacesTopBar = ({ races, setRaceDisplay }) => {
     const { apiBase } = useContext(AppContext);

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/Character.css';
+import '../../../../styles/Races.css';
 
 const RacesMain = () => {
 

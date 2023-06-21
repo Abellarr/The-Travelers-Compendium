@@ -4,7 +4,7 @@ import RaceContext from '../../../Context/RaceContext.jsx';
 import RacesTopBar from './RacesTopBar.jsx';
 import RacesMain from './RacesMain.jsx';
 import RaceDispContainer from './RaceDispContainer.jsx';
-import '../../../../styles/Character.css';
+import '../../../../styles/Races.css';
 
 
 const Races = () => {
