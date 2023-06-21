@@ -7,6 +7,11 @@ const Subrace = ({ sub, subRaceOpen, setSubRaceOpen }) => {
     const [ subProf, setSubProf ] = useState([]);
     const { apiBase } = useContext(AppContext);
 
+    const handleClose = () => {
+        const modal = document.getElementById('subRaceModal');
+        modal.close();
+    }
+
     useEffect(() => {
         (async () => {
           const response = await fetch(`${apiBase}${sub.url}`);
@@ -19,11 +24,14 @@ const Subrace = ({ sub, subRaceOpen, setSubRaceOpen }) => {
       }, []);
 
     return (
-        <dialog className='subRaceInfo' open={subRaceOpen}>
-            <h2>{subRaceInfo.name}</h2>
+        <dialog className='subRaceInfo' id='subRaceModal'>
+            <div className='subRaceHeader'>
+                <h2>{subRaceInfo.name}</h2>
+                <button className='subRaceButton' onClick={handleClose}>X</button>
+            </div>
             <p>{subRaceInfo.desc}</p>
             <h3>Ability Score Bonus</h3>
-            <p>{subRaceInfo.ability_bonuses[0].abilty_score.name}: +{subRaceInfo.ability_bonuses[0].bonus}</p>
+            {/* {subRaceInfo.ability_bonuses ? <p>{subRaceInfo.ability_bonuses[0].abilty_score.name}: +{subRaceInfo.ability_bonuses[0].bonus}</p> : null} */}
             <h3>Additional Proficiencies</h3>
             {subProf[0] ? subProf.map((prof, ind) => {
                 return (
@@ -33,7 +41,7 @@ const Subrace = ({ sub, subRaceOpen, setSubRaceOpen }) => {
             :
             <p>None</p>}
             <h3>Additional Languages</h3>
-            
+
         </dialog>
     )
 }

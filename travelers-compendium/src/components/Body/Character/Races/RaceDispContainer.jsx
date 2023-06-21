@@ -12,6 +12,11 @@ const RaceDispContainer = ({ raceDisplay }) => {
     const [ subRaceOpen, setSubRaceOpen ] = useState(false)
     const { apiBase } = useContext(AppContext);
 
+    const handleClick = () => {
+        const modal = document.getElementById('subRaceModal');
+        modal.showModal();
+    }
+
     useEffect(() => {
         (async () => {
           const response = await fetch(`${apiBase}/api/races/${raceDisplay}`);
@@ -43,8 +48,8 @@ const RaceDispContainer = ({ raceDisplay }) => {
                 </div>
                 <div className='raceSubraces'>
                     <h2>Subraces</h2>
-                    {raceInfo.name && raceInfo.subraces[0] ? <p className='subraceName'>{raceInfo.subraces[0].name}</p> : <p>None</p>}
-                    <Subrace sub={raceInfo.subraces[0]} subRaceOpen={subRaceOpen} setSubRaceOpen={setSubRaceOpen} />
+                    {raceInfo.name && raceInfo.subraces[0] ? <p className='subraceName' onClick={handleClick}>{raceInfo.subraces[0].name}</p> : <p>None</p>}
+                    {raceInfo.name && raceInfo.subraces[0] ? <Subrace sub={raceInfo.subraces[0]} subRaceOpen={subRaceOpen} setSubRaceOpen={setSubRaceOpen} /> : null}
                 </div>
                 <div className='raceSpeed'>
                     <h2>Speed</h2>
