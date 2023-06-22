@@ -2,7 +2,9 @@ import React, { useContext, useState, useEffect } from 'react';
 import AppContext from '../../../Context/AppContext.jsx';
 import TraitCard from './TraitCard.jsx';
 import Subrace from './Subrace.jsx';
+import DraconicAncestry from './DraconicAncestry.jsx';
 import '../../../../styles/Races.css';
+
 
 
 const RaceDispContainer = ({ raceDisplay }) => {
@@ -31,7 +33,9 @@ const RaceDispContainer = ({ raceDisplay }) => {
 
     return (
         <div className='raceDispMain'>
-            <h1 className='raceInfoTitle'>{raceInfo.name}</h1>
+            <div className='raceInfoTitle'>
+                <h1>{raceInfo.name}</h1>
+            </div>
             <div className='raceInfoContainer'>
                 <div className='raceAbilities'>
                     <h2>Ability Score Increase</h2>
@@ -82,6 +86,7 @@ const RaceDispContainer = ({ raceDisplay }) => {
                             </div>
                         )
                     }) : null}
+                    {raceInfo.index === 'dragonborn' ? <DraconicAncestry /> : null}
                 </div>
             </div>
         </div>

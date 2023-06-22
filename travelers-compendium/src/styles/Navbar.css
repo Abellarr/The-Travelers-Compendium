@@ -2,12 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
 
 .mainNavBar {
+    position: relative;
+    z-index: 0;
     display: flex;
-    flex-direction: column;
-    background-image: url('../assets/Header.png');
     width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
     margin-bottom: 2.5vh;
 }
 
@@ -18,11 +16,18 @@
     width: 100%;
 } */
 
+.mainPageHeader {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
 .navBarLogo {
+    position: absolute;
+    z-index: 3;
     float: left;
     width: 12%;
-    height: 12%;
-    padding: 30px;
+    padding: 1.5rem;
     cursor: pointer;
 }
 
@@ -32,8 +37,8 @@
 }
 
 .navButtonContainer {
-    position: fixed;
-    top: 16%;
+    position: absolute;
+    top: 90%;
     box-sizing: inherit;
     width: 15%;
     display: block;

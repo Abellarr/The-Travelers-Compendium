@@ -3,6 +3,7 @@ import AppContext from '../Context/AppContext.jsx';
 import NavbarAccordion from './NavbarAccordion.jsx';
 import '../../styles/Navbar.css';
 import Logo from '../../assets/&-logo.png';
+import Header from '../../assets/Header.png'
 
 const Navbar = () => {
     const { setBodyDisplay } = useContext(AppContext)
@@ -23,6 +24,11 @@ const Navbar = () => {
     return (
         <div className='navBarComponent'>
             <div className='mainNavBar'>
+                <img
+                src={Header}
+                alt="Traveler's Compendium Header"
+                className='mainPageHeader'
+                ></img>
                 <img 
                     src={Logo}
                     alt='Ampersand Logo'

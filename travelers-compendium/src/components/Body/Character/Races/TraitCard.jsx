@@ -18,8 +18,12 @@ const TraitCard = ({ trait }) => {
 
     return (
         <div className='traitCard'>
-            <p className='traitCardText'>{traitInfo.index ? traitInfo.desc[0] : null}</p>
-            {!traitInfo ? <p>None</p> : null}
+            {traitInfo.index && traitInfo.desc[0] ? traitInfo.desc.map((desc, ind) => {
+                return (
+                    <p key={`traitCard${ind}`} className='traitCardText'>{desc}</p>
+                )
+            })
+        : <p>None</p>}
         </div>
     )
 }
