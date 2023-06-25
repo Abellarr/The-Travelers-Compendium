@@ -62,8 +62,8 @@ const ClassDispContainer = ({ classDisplay }) => {
                 <h2>Hit Points</h2>
                 <p><b>Hit Dice:</b> 1d{classInfo.hit_die} per {classInfo.index} level</p>
                 <p><b>Hit Points at 1st Level:</b> {classInfo.hit_die} + your Constitution modifier</p>
-                <p><b>Hit Points at Higher Levels:</b> 1d{classInfo.hit_die} (or {avgHp}) + your Constitution modifier per 
-                {classInfo.index} level after 1st</p>
+                <p><b>Hit Points at Higher Levels:</b> 1d{classInfo.hit_die} (or {avgHp}) + your Constitution modifier 
+                per {classInfo.index} level after 1st</p>
             </div>
             <div className='classProf'>
                 <h2>Proficiencies</h2>
