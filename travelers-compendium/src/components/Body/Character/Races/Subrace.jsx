@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import axios from 'axios';
 import AppContext from '../../../Context/AppContext.jsx';
 import TraitCard from './TraitCard.jsx';
 import '../../../../styles/Races.css';
@@ -15,11 +16,10 @@ const Subrace = ({ sub, subRaceOpen, setSubRaceOpen }) => {
 
     useEffect(() => {
         (async () => {
-          const response = await fetch(`${apiBase}${sub.url}`);
-          const subrace = await response.json();
-          setSubRaceInfo(subrace);
-          setSubTrait(subrace.racial_traits);
-          console.log(subrace);
+            const { data } = await axios.get(`${apiBase}${sub.url}`);
+          setSubRaceInfo(data);
+          setSubTrait(data.racial_traits);
+          console.log(data);
         })();
         return () => {};
       }, []);

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.classDispMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.classesMain {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.classDispTitle {
+    color: rgb(74, 48, 16);
+    width: 92%;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    margin: 15px 0;
+    padding: 0px 10px 20px 10px;
+    border-radius: 5px;
+}
+
+.classDispTitle h1 {
+    font-size: 5em;
+    margin: 0;
+    border-bottom: 5px solid rgb(74, 48, 16);
+}
+
+.classHp {
+    width: 36%;
+    box-sizing: inherit;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
+}
+
+.classProf {
+    width: 55%;
+    box-sizing: inherit;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
+}
+
+.classInfoContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+
+.classInfoContainer h2 {
+    margin: 10px 0 ;
+    font-family: 'Piazzolla', serif;
+    font-size: 1.75em;
+    border-bottom: 3px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+    text-align: left;
+    padding-left: 20px;
+}
+
+.classInfoContainer p {
+    /* font-family: 'Piazzolla', serif;
+    font-weight: 550; */
+    font-size: 1.1em;
+    text-align: left;
+    padding-left: 10px;
+    margin: 12px 0;
+}

@@ -11,11 +11,11 @@ const ClassesTopBar = ({ classes, setClassDisplay }) => {
     }
 
     return (
-        <div className='raceMainNames'>
-            <div className='raceCardDiv'>
+        <div className='classMainNames'>
+            <div className='classCardDiv'>
                 {classes.map((clas, ind) => {
                     return (
-                        <div className='raceMainCard' key={clas.index + ind} onClick={() => handleClick(clas.index)}>
+                        <div className='classMainCard' key={clas.index + ind} onClick={() => handleClick(clas.index)}>
                             <h3 className='raceNames'>{clas.name}</h3>
                         </div>
                     )

@@ -87,9 +87,15 @@
 
 .raceMainNames {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* margin: auto; */
     width: 100%;
+}
+
+.classMainNames {
+    display: flex;
+    margin: 0 auto;
+    width: 95%
 }
 
 .raceTopHeader {
@@ -110,7 +116,15 @@
     font-family: 'Piazzolla', serif;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
     margin: 2px 10px;
+}
 
+.classMainCard {
+    width: 13%;
+    border-radius: 4px;
+    background-color: burlywood;
+    font-family: 'Piazzolla', serif;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    margin: 2px 10px;
 }
 
 .raceMainCard:hover {
@@ -121,10 +135,27 @@
     transition: scale 0.2s;
 }
 
+.classMainCard:hover {
+    cursor: pointer;
+    scale: 110%;
+    background-color: rgb(130, 83, 27);
+    color: rgb(244, 237, 188);
+    transition: scale 0.2s;
+}
+
 .raceCardDiv {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+.classCardDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
     width: 100%;
 }

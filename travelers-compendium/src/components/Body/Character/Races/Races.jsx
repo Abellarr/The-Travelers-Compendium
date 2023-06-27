@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import axios from 'axios';
 import AppContext from '../../../Context/AppContext.jsx';
 import RaceContext from '../../../Context/RaceContext.jsx';
 import RacesTopBar from './RacesTopBar.jsx';
@@ -13,10 +14,9 @@ const Races = () => {
 
     useEffect(() => {
         (async () => {
-          const response = await fetch(`${apiBase}/api/races`);
-          const raceInfo = await response.json();
-          setRaces(raceInfo.results);
-          console.log(raceInfo.results);
+          const { data } = await axios.get(`${apiBase}/api/races`);
+          setRaces(data.results);
+          console.log(data.results);
         })();
         return () => {};
       }, []);

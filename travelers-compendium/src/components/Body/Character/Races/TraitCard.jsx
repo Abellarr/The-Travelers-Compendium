@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import axios from 'axios';
 import AppContext from '../../../Context/AppContext.jsx';
 import '../../../../styles/Races.css';
 
@@ -8,10 +9,9 @@ const TraitCard = ({ trait }) => {
 
     useEffect(() => {
         (async () => {
-          const response = await fetch(`${apiBase}${trait.url}`);
-          const traits = await response.json();
-          setTraitInfo(traits);
-          console.log(traits);
+          const { data } = await axios.get(`${apiBase}${trait.url}`);
+          setTraitInfo(data);
+          console.log(data);
         })();
         return () => {};
       }, []);

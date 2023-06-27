@@ -1,9 +1,10 @@
 import React, { useContext, useEffect } from 'react';
+import axios from 'axios';
 import AppContext from '../../../Context/AppContext.jsx';
 import ClassContext from '../../../Context/ClassContext.jsx';
 import ClassesTopBar from './ClassesTopBar.jsx';
 import ClassesMain from './ClassesMain.jsx';
-import '../../../../styles/Character.css';
+import '../../../../styles/Classes.css';
 import ClassDispContainer from './ClassDispContainer.jsx';
 
 
@@ -13,10 +14,9 @@ const Classes = () => {
 
     useEffect(() => {
         (async () => {
-          const response = await fetch(`${apiBase}/api/classes`);
-          const classInfo = await response.json();
-          setClasses(classInfo.results);
-          console.log(classInfo.results);
+          const { data } = await axios.get(`${apiBase}/api/classes`);
+          setClasses(data.results);
+          console.log(data.results);
         })();
         return () => {};
       }, []);
