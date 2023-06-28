@@ -119,7 +119,7 @@
 }
 
 .classMainCard {
-    width: 13%;
+    width: 14%;
     border-radius: 4px;
     background-color: burlywood;
     font-family: 'Piazzolla', serif;
@@ -387,11 +387,12 @@
     /* box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5); */
     border: 1px solid rgb(83, 55, 20);
     border-radius: 5px;
-    font-family: 'Piazzolla', serif;
+    
 }
 
 .dragonTable th {
     color: rgb(83, 55, 20);
+    font-family: 'Piazzolla', serif;
     font-size: 1.45em;
     border-bottom: 2px solid rgb(83, 55, 20);
 }

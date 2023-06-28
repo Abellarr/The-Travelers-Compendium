@@ -83,7 +83,7 @@ const ClassDispContainer = ({ classDisplay }) => {
                     <p><b>Skills:</b> {classInfo.index ? classInfo.proficiency_choices[0].desc : 'Loading...'}</p>
                 </div>
                 <div className='classTableDisp'>
-                    <h3>By Level:</h3>
+                    <h3>Class Features by Level:</h3>
                     {classInfo.index ? <ClassTable className={classInfo.index} /> : <p>Loading...</p>}
                 </div>
             </div>

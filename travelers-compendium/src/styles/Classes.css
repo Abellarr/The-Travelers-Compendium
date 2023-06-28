@@ -69,10 +69,71 @@
 }
 
 .classInfoContainer p {
-    /* font-family: 'Piazzolla', serif;
-    font-weight: 550; */
     font-size: 1.1em;
     text-align: left;
     padding-left: 10px;
     margin: 12px 0;
+}
+
+.classTableDisp {
+    width: 93%;
+    align-items: center;
+    box-sizing: inherit;
+    padding: 10px 10px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
+}
+
+.classTableDisp h3 {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.75em;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: 3px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+    margin: 10px 0px;
+}
+
+.classTableMain {
+    margin: auto;
+    width: 85%;
+}
+
+.classTableMain th {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.15em;
+    color: rgb(83, 55, 20);
+    border-bottom: 2px solid rgb(83, 55, 20);
+}
+
+.classTableMain td {
+    font-size: 1.1em;
+}
+
+.classTableSpell th {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.1em;
+    color: rgb(83, 55, 20);
+    border-bottom: 2px solid rgb(83, 55, 20);
+}
+
+#profTable1 {
+    width: 10%;
+}
+
+.classSpellHeader {
+    width: 3%;
+}
+
+#classCantrips {
+    width: 8%;
+}
+
+#spellsKnown {
+    width: 8%;
+}
+
+.featureRow {
+    width: 50%;
 }
