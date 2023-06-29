@@ -2,7 +2,9 @@ import React, { useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 import AppContext from '../../../Context/AppContext.jsx';
 import ClassTable from './ClassTable.jsx';
+import WarlockTable from './WarlockTable.jsx';
 import '../../../../styles/Classes.css';
+
 
 
 
@@ -47,7 +49,44 @@ const ClassDispContainer = ({ classDisplay }) => {
         return tools.length === 0 ? 'None' : tools.join(', ');
     }
 
-    const druidWeaps = 'Clubs, Daggers, Javelins, Maces, Quarterstaves, Sickles, Spears, Darts, Slings, Scimitars'
+    const druidWeaps = 'Clubs, Daggers, Javelins, Maces, Quarterstaves, Sickles, Spears, Darts, Slings, Scimitars';
+
+    const startEquip = (arr) => {
+        let combined = [];
+        arr.forEach((equip, ind) => {
+            combined.push(`${equip.quantity > 1 ? equip.quantity : ''} ${equip.equipment.name}${equip.quantity > 1 ? 's' : ''}`)
+        });
+        return combined.join(', ');
+    }
+
+    const subClassDisp = () => {
+        switch (classInfo.index) {
+            case 'barbarian':
+                return `Path of the ${classInfo.subclasses[0].name}`;
+            case 'bard':
+                return `College of ${classInfo.subclasses[0].name}`;
+            case 'cleric':
+                return `${classInfo.subclasses[0].name} Domain`;
+            case 'druid':
+                return `Circle of the ${classInfo.subclasses[0].name}`;
+            case 'fighter':
+                return `${classInfo.subclasses[0].name}`;
+            case 'monk':
+                return `Way of the ${classInfo.subclasses[0].name}`;
+            case 'paladin':
+                return `Oath of ${classInfo.subclasses[0].name}`;
+            case 'ranger':
+                return `${classInfo.subclasses[0].name}`;
+            case 'rogue':
+                return `${classInfo.subclasses[0].name}`;
+            case 'sorcerer':
+                return `${classInfo.subclasses[0].name} Bloodline`;
+            case 'warlock':
+                return `Pact of the ${classInfo.subclasses[0].name}`;
+            case 'wizard':
+                return `School of ${classInfo.subclasses[0].name}`;
+        }
+    }
 
     useEffect(() => {
         (async () => {
@@ -84,8 +123,40 @@ const ClassDispContainer = ({ classDisplay }) => {
                 </div>
                 <div className='classTableDisp'>
                     <h3>Class Features by Level:</h3>
-                    {classInfo.index ? <ClassTable className={classInfo.index} /> : <p>Loading...</p>}
+                    {classInfo.index && classInfo.index === 'warlock' ? <WarlockTable className={classInfo.index} /> : null}
+                    {classInfo.index && classInfo.index !== 'warlock' ? <ClassTable className={classInfo.index} /> : null}
                 </div>
+                <div className='classStartEquip'>
+                    <h2>Starting Equipment</h2>
+                    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+                    {classInfo.starting_equipment ? <p>- {startEquip(classInfo.starting_equipment)}</p> : null}
+                    {classInfo.index && classInfo.starting_equipment_options.map((item) => {
+                        return (<p>- {item.desc}</p>)
+                    })}
+                </div>
+                <div className='classMultiClass'>
+                    <h2>Multiclassing</h2>
+                    <p>After first level, in order to gain levels as a {classInfo.name} you need to meet the following requirements:</p>
+                    <div className='classMCText'>
+                        {classInfo.index && classInfo.multi_classing.prerequisites ? 
+                        classInfo.multi_classing.prerequisites.map((prereq, ind) => {
+                            return (<p>{prereq.ability_score.name} - Minimum {prereq.minimum_score}</p>)
+                        })
+                        : null}
+                        {classInfo.index === 'fighter' ? 
+                        <p>STR - Minimum 13<br></br>or<br></br>DEX - Minimum 13</p> 
+                        : null}
+                    </div>
+                </div>
+                <div className='classSubClass'>
+                    <h2>Subclasses</h2>
+                    <div className='subClassButton'>
+                        <p>{subClassDisp()}</p>
+                    </div>
+                </div>
+                {/* <div className='classFeatureContainer'>
+
+                </div> */}
             </div>
         </div>
     )

@@ -137,3 +137,57 @@
 .featureRow {
     width: 50%;
 }
+
+.classStartEquip {
+    width: 40%;
+    padding: 10px 10px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
+    /* font-size: 0.9em; */
+}
+
+.classMultiClass {
+    width: 26%;
+    padding: 10px 10px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
+    /* font-size: 0.9em; */
+}
+
+.classSubClass {
+    width: 19%;
+    padding: 10px 10px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.5);
+}
+
+.classMCText p {
+    margin: 25px 0 12px 0;
+    text-align: center;
+}
+
+.subClassButton {
+    width: 100%;
+}
+
+.subClassButton p {
+    width: 80%;
+    border-radius: 4px;
+    background-color: burlywood;
+    font-family: 'Piazzolla', serif;
+    text-align: center;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    margin: 25px auto;
+    padding: 6px;
+}
+
+.subClassButton p:hover {
+    cursor: pointer;
+    scale: 110%;
+    background-color: rgb(130, 83, 27);
+    color: rgb(244, 237, 188);
+    transition: scale 0.2s;
+}
