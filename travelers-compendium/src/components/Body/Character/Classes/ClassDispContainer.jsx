@@ -135,8 +135,9 @@ const ClassDispContainer = ({ classDisplay }) => {
                 <div className='classSubClass'>
                     <h2>Subclasses</h2>
                     <div className='subClassButton'>
-                        <p onClick={handleClick}>{subClassDisp()}</p>
+                        <p onClick={handleClick}><b>{subClassDisp()}</b></p>
                         {classInfo.index ? <SubClass subClass={classInfo.subclasses[0].index} subName={subClassDisp()} /> : null}
+                        {classInfo.index && classInfo.index === 'warlock' ? <p><b>Eldritch Invocations</b></p> : null}
                     </div>
                 </div>
                 <div className='classProf'>
@@ -150,7 +151,7 @@ const ClassDispContainer = ({ classDisplay }) => {
                 <div className='classStartEquip'>
                     <h2>Starting Equipment</h2>
                     <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
-                    {classInfo.starting_equipment ? <p>- {startEquip(classInfo.starting_equipment)}</p> : null}
+                    {classInfo.index && classInfo.starting_equipment[0] ? <p>- {startEquip(classInfo.starting_equipment)}</p> : null}
                     {classInfo.index && classInfo.starting_equipment_options.map((item) => {
                         return (<p>- {item.desc}</p>)
                     })}
