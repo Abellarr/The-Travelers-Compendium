@@ -20,18 +20,6 @@ const RaceDispContainer = ({ raceDisplay }) => {
         modal.showModal();
     }
 
-    // useEffect(() => {
-    //     (async () => {
-    //       const response = await fetch(`${apiBase}/api/races/${raceDisplay}`);
-    //       const race = await response.json();
-    //       setRaceInfo(race);
-    //       setTraits(race.traits);
-    //       setAbilities(race.ability_bonuses)
-    //       console.log(race);
-    //     })();
-    //     return () => {};
-    //   }, []);
-
     useEffect(()=> {
         (async ()=> {
             try {

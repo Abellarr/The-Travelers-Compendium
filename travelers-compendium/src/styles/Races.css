@@ -190,7 +190,6 @@
     color: rgb(74, 48, 16);
     width: 92%;
     font-family: 'Permanent Marker', cursive;
-    font-weight: lighter;
     margin: 15px 0;
     padding: 0px 10px 20px 10px;
     border-radius: 5px;
@@ -198,6 +197,7 @@
 
 .raceInfoTitle h1 {
     font-size: 5em;
+    font-weight: lighter;
     margin: 0;
     border-bottom: 5px solid rgb(74, 48, 16);
 }
@@ -212,7 +212,7 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
-    background-color: rgba(245, 245, 220, 0.5);
+    background-color: rgba(245, 245, 220, 0.7);
 }
 
 .raceTraits h2 {
@@ -252,7 +252,7 @@
     padding: 0 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
-    background-color: rgba(245, 245, 220, 0.5);
+    background-color: rgba(245, 245, 220, 0.7);
 }
 
 .abilityBonuses {
@@ -272,7 +272,7 @@
     padding: 0 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
-    background-color: rgba(245, 245, 220, 0.5);
+    background-color: rgba(245, 245, 220, 0.7);
 }
 
 .raceAge {
@@ -281,7 +281,7 @@
     padding: 0 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
-    background-color: rgba(245, 245, 220, 0.5);
+    background-color: rgba(245, 245, 220, 0.7);
 }
 
 .raceSpeed {
@@ -290,7 +290,7 @@
     padding: 0 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
-    background-color: rgba(245, 245, 220, 0.5);
+    background-color: rgba(245, 245, 220, 0.7);
 }
 
 .raceSize {
@@ -299,7 +299,7 @@
     padding: 0 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
-    background-color: rgba(245, 245, 220, 0.5);
+    background-color: rgba(245, 245, 220, 0.7);
 }
 
 .raceLanguages {
@@ -308,7 +308,7 @@
     padding: 0 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
-    background-color: rgba(245, 245, 220, 0.5);
+    background-color: rgba(245, 245, 220, 0.7);
 }
 
 .raceSubraces {
@@ -317,7 +317,7 @@
     padding: 0 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
-    background-color: rgba(245, 245, 220, 0.6);
+    background-color: rgba(245, 245, 220, 0.7);
 }
 
 .traitCardContainer {

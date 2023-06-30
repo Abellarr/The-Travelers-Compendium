@@ -3,9 +3,9 @@ import axios from 'axios';
 import AppContext from '../../../Context/AppContext.jsx';
 import ClassTable from './ClassTable.jsx';
 import WarlockTable from './WarlockTable.jsx';
+import SubClass from './SubClass.jsx';
+import ClassFeatureContainer from './ClassFeatureContainer.jsx';
 import '../../../../styles/Classes.css';
-
-
 
 
 const ClassDispContainer = ({ classDisplay }) => {
@@ -88,6 +88,11 @@ const ClassDispContainer = ({ classDisplay }) => {
         }
     }
 
+    const handleClick = () => {
+        const modal = document.getElementById('subClassModal');
+        modal.showModal();
+    }
+
     useEffect(() => {
         (async () => {
           const { data } = await axios.get(`${apiBase}/api/classes/${classDisplay}`);
@@ -113,27 +118,6 @@ const ClassDispContainer = ({ classDisplay }) => {
                     <p><b>Hit Points at Higher Levels:</b> 1d{classInfo.hit_die} (or {avgHp}) + your Constitution modifier 
                     per {classInfo.index} level after 1st</p>
                 </div>
-                <div className='classProf'>
-                    <h2>Proficiencies</h2>
-                    <p><b>Armor:</b> {classInfo.index ? armorProfs(profs) : 'Loading...'}</p>
-                    <p><b>Weapons:</b> {classInfo.index && classInfo.index === 'druid' ? druidWeaps : weapProfs(profs)}</p>
-                    <p><b>Tools:</b> {classInfo.index ? toolProfs(profs) : 'Loading...'}</p>
-                    <p><b>Saving Throws:</b> {classInfo.index ? `${savingThrows[0].name}, ${savingThrows[1].name}` : 'Loading...'}</p>
-                    <p><b>Skills:</b> {classInfo.index ? classInfo.proficiency_choices[0].desc : 'Loading...'}</p>
-                </div>
-                <div className='classTableDisp'>
-                    <h3>Class Features by Level:</h3>
-                    {classInfo.index && classInfo.index === 'warlock' ? <WarlockTable className={classInfo.index} /> : null}
-                    {classInfo.index && classInfo.index !== 'warlock' ? <ClassTable className={classInfo.index} /> : null}
-                </div>
-                <div className='classStartEquip'>
-                    <h2>Starting Equipment</h2>
-                    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
-                    {classInfo.starting_equipment ? <p>- {startEquip(classInfo.starting_equipment)}</p> : null}
-                    {classInfo.index && classInfo.starting_equipment_options.map((item) => {
-                        return (<p>- {item.desc}</p>)
-                    })}
-                </div>
                 <div className='classMultiClass'>
                     <h2>Multiclassing</h2>
                     <p>After first level, in order to gain levels as a {classInfo.name} you need to meet the following requirements:</p>
@@ -151,12 +135,35 @@ const ClassDispContainer = ({ classDisplay }) => {
                 <div className='classSubClass'>
                     <h2>Subclasses</h2>
                     <div className='subClassButton'>
-                        <p>{subClassDisp()}</p>
+                        <p onClick={handleClick}>{subClassDisp()}</p>
+                        {classInfo.index ? <SubClass subClass={classInfo.subclasses[0].index} subName={subClassDisp()} /> : null}
                     </div>
                 </div>
-                {/* <div className='classFeatureContainer'>
-
-                </div> */}
+                <div className='classProf'>
+                    <h2>Proficiencies</h2>
+                    <p><b>Armor:</b> {classInfo.index ? armorProfs(profs) : 'Loading...'}</p>
+                    <p><b>Weapons:</b> {classInfo.index && classInfo.index === 'druid' ? druidWeaps : weapProfs(profs)}</p>
+                    <p><b>Tools:</b> {classInfo.index ? toolProfs(profs) : 'Loading...'}</p>
+                    <p><b>Saving Throws:</b> {classInfo.index ? `${savingThrows[0].name}, ${savingThrows[1].name}` : 'Loading...'}</p>
+                    <p><b>Skills:</b> {classInfo.index ? classInfo.proficiency_choices[0].desc : 'Loading...'}</p>
+                </div>
+                <div className='classStartEquip'>
+                    <h2>Starting Equipment</h2>
+                    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+                    {classInfo.starting_equipment ? <p>- {startEquip(classInfo.starting_equipment)}</p> : null}
+                    {classInfo.index && classInfo.starting_equipment_options.map((item) => {
+                        return (<p>- {item.desc}</p>)
+                    })}
+                </div>
+                <div className='classTableDisp'>
+                    <h3>Features by Level:</h3>
+                    {classInfo.index && classInfo.index === 'warlock' ? <WarlockTable className={classInfo.index} /> : null}
+                    {classInfo.index && classInfo.index !== 'warlock' ? <ClassTable className={classInfo.index} /> : null}
+                </div>
+                <div className='classFeatureContainer'>
+                    <h2>Class Features</h2>
+                    {classInfo.index ? <ClassFeatureContainer spellCasting={classInfo.spellcasting} clas={classInfo.index} /> : null}
+                </div>
             </div>
         </div>
     )
