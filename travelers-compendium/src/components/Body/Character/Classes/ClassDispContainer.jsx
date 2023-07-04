@@ -6,6 +6,7 @@ import WarlockTable from './WarlockTable.jsx';
 import SubClass from './SubClass.jsx';
 import ClassFeatureContainer from './ClassFeatureContainer.jsx';
 import '../../../../styles/Classes.css';
+import Invocations from './Invocations.jsx';
 
 
 const ClassDispContainer = ({ classDisplay }) => {
@@ -93,6 +94,11 @@ const ClassDispContainer = ({ classDisplay }) => {
         modal.showModal();
     }
 
+    const handleInvocations = () => {
+        const modal = document.getElementById('invocations');
+        modal.showModal();
+    }
+
     useEffect(() => {
         (async () => {
           const { data } = await axios.get(`${apiBase}/api/classes/${classDisplay}`);
@@ -137,7 +143,8 @@ const ClassDispContainer = ({ classDisplay }) => {
                     <div className='subClassButton'>
                         <p onClick={handleClick}><b>{subClassDisp()}</b></p>
                         {classInfo.index ? <SubClass subClass={classInfo.subclasses[0].index} subName={subClassDisp()} /> : null}
-                        {classInfo.index && classInfo.index === 'warlock' ? <p><b>Eldritch Invocations</b></p> : null}
+                        {classInfo.index && classInfo.index === 'warlock' ? <p onClick={handleInvocations}><b>Eldritch Invocations</b></p> : null}
+                        {classInfo.index && classInfo.index === 'warlock' ? <Invocations /> : null}
                     </div>
                 </div>
                 <div className='classProf'>

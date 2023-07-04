@@ -65,8 +65,8 @@ const FeatureCard = ({ spellCasting, subUrl }) => {
                 return (
                     <>
                         <h4 className='classSpellcasting'>{entry.name}</h4>
-                        {entry.desc.map((item)=>{
-                            return <p>{item}</p>
+                        {entry.desc.map((item, ind)=>{
+                            return <p key={`feature${ind}`}>{item}</p>
                         })}
                     </>
                 )
