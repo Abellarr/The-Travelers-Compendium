@@ -30,6 +30,20 @@
     border-bottom: 5px solid rgb(74, 48, 16);
 }
 
+.classDesc {
+    width: 92%;
+    box-sizing: inherit;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);    
+}
+
+#classDescription p {
+    padding: 0 10px;
+    margin: 10px 0 25px 0;
+}
+
 .classHp {
     width: 41%;
     box-sizing: inherit;
@@ -310,8 +324,10 @@
 .oathSpells {
     margin: auto;
     width: 70%;
+    background-color: rgba(240, 222, 187, 0.95);
     border: 1px solid rgb(83, 55, 20);
     border-radius: 8px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
 }
 
 .oathSpells th {
@@ -337,6 +353,8 @@
     width: 65%;
     border: 1px solid rgb(83, 55, 20);
     border-radius: 8px;
+    background-color: rgba(240, 222, 187, 0.95);
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
 }
 
 .circleSpells h4 {
@@ -398,6 +416,6 @@
     border-bottom: 4px solid rgb(83, 55, 20);
 }
 
-.invoCard {
-
+#dragonTable {
+    width: 50%;
 }

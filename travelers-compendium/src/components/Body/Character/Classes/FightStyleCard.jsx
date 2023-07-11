@@ -12,6 +12,14 @@ const FightStyleCard = ({ url }) => {
             return str.substring(10);
         } else if (str.includes('Fighting')) {
             return str.substring(15);
+        } else if (str.includes(`Prey`)) {
+            return str.substring(14);
+        } else if (str.includes(`Tactics`)) {
+            return str.substring(19);
+        } else if (str.includes(`Multi`)) {
+            return str.substring(13);
+        } else if (str.includes(`Superior`)) {
+            return str.substring(26);
         }
     }
 

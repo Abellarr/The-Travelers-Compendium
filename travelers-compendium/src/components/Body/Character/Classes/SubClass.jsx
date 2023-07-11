@@ -5,9 +5,9 @@ import SubFeatureCard from './SubFeatureCard.jsx';
 import OathSpells from './SpellTables/OathSpells';
 import CircleSpells from './SpellTables/CircleSpells';
 import DomainSpells from './SpellTables/DomainSpells';
-import '../../../../styles/Classes.css';
 import PactSpells from './SpellTables/PactSpells';
-
+import FightStyleCard from './FightStyleCard';
+import '../../../../styles/Classes.css';
 
 
 const SubClass = ({ subClass, subName }) => {
@@ -43,6 +43,14 @@ const SubClass = ({ subClass, subName }) => {
                         return null;
                     } else if (feature.index.includes('circle-spells') && parseInt(feature.index[feature.index.length-1]) > 1) {
                         return null;
+                    } else if (feature.name.includes('Ancestor:')) {
+                        return null;
+                    } else if (feature.name.includes(`Prey:`) ||
+                    feature.name.includes('Defensive Tactics:') ||
+                    feature.name.includes('Multiattack:') ||
+                    feature.name.includes(`Hunter's Defense:`)
+                    ) {
+                        return <FightStyleCard url={feature.url} />
                     } else {
                         return <SubFeatureCard subUrl={feature.url} />
                     }

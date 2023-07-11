@@ -29,6 +29,9 @@ const Invocations = ()=> {
                     <h2>{invocations.name}</h2>
                     <button className='subClassModalButton' onClick={handleClose}>X</button>
                 </div>
+                {invocations.name? invocations.desc.map((desc)=>{
+                    return <p>{desc}</p>;
+                }) : <p>Loading...</p>}
                 {invocations.name ? invocations.feature_specific.invocations.map((invo)=>{
                     return <p><InvoCard url={invo.url} /></p>
                 }) 

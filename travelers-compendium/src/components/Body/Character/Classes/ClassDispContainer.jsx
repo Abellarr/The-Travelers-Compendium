@@ -5,6 +5,7 @@ import ClassTable from './ClassTable.jsx';
 import WarlockTable from './WarlockTable.jsx';
 import SubClass from './SubClass.jsx';
 import ClassFeatureContainer from './ClassFeatureContainer.jsx';
+import classDesc from './classDescriptions.js';
 import '../../../../styles/Classes.css';
 import Invocations from './Invocations.jsx';
 
@@ -12,7 +13,7 @@ import Invocations from './Invocations.jsx';
 const ClassDispContainer = ({ classDisplay }) => {
     const [ classInfo, setClassInfo ] = useState({})
     const [ profs, setProfs ] = useState([]);
-    const [ savingThrows, setSavingThrows] = useState([])
+    const [ savingThrows, setSavingThrows] = useState([]);
     const { apiBase } = useContext(AppContext);
 
     const avgHp = (classInfo.hit_die / 2) + 1;
@@ -117,6 +118,12 @@ const ClassDispContainer = ({ classDisplay }) => {
                 <h1>{classInfo.name}</h1>
             </div>
             <div className='classInfoContainer'>
+                <div className='classDesc' id='classDescription'>
+                    <h2>Description</h2>
+                    {classInfo.index ? classDesc[classInfo.index].map((desc)=>{
+                        return <p><i>{desc}</i></p>
+                    }) : null}
+                </div>
                 <div className='classHp'>
                     <h2>Hit Points</h2>
                     <p><b>Hit Dice:</b> 1d{classInfo.hit_die} per {classInfo.index} level</p>
