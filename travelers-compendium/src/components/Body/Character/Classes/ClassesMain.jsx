@@ -36,14 +36,20 @@ const ClassesMain = () => {
                     range of hit points your character can have per level.
                 </p>
                 <h3>Multiclassing Requirements</h3>
-                <p>Text goes here.</p>
+                <p>Beyond first level, some characters may wish to train in a different class. This section details any 
+                    prerequisites for multiclassing into that particular class.
+                </p>
                 <h3>Subclasses</h3>
-                <p>Text goes here.</p>
+                <p>Subclasses are variations within each class, such as an Oath of Devotion Paladin or a Champion Fighter, 
+                    that offer additional unique features. While more subclasses exist for each class, the subclasses listed 
+                    are available within the SRD and the specific benefits or features are listed.</p>
                 <h3>Proficiencies</h3>
                 <p>Your character's proficiencies show what armor, weapons, tools, saving throws, and skills your character 
-                    will generally add their proficiency bonus to when used.</p>
+                    is adept at using, and they will generally add their proficiency bonus to when used.</p>
                 <h3>Recommended Starting Equipment</h3>
-                <p>Text goes here.</p>
+                <p>This section highlights recommendations for your equipment at level 1, based on class and starting proficiencies. 
+                    Depending on any proficiencies given by your race or any feats you may have, you may want to start out with
+                    different equipment, with permission from the Dungeon Master (DM).</p>
                 <h3>Class Features</h3>
                 <p>Each class has unique features that set them apart from the other classes. Some classes can cast spells, while 
                     others can perform great feats of strength in combat. Some can even transcend their own physical limits or
