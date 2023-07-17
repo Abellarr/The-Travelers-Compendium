@@ -1,0 +1,8 @@
+.footerMain {
+    position: absolute;
+    bottom: 100;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+    margin-top: 30px;
+}

@@ -7,22 +7,21 @@ const RacesMain = () => {
         <div className='raceMainContainer'>
             <div className='raceIntro'>
                 <h1 className='raceMainTitle'>Player Races</h1>
-                <h2 className='raceMainIntro'>
-                    Choosing your character's race is an important decision that can affect many aspects of your roleplaying 
-                    experience. Not only can your race provide bonuses to your ability in combat or interacting with the 
-                    environment, it may also affect how other players and non-player characters interact with you.
-                </h2>
-                <h3 className='raceMainIntro'>
-                    For instance, Dragonborn may rarely be seen in certain areas of your adventuring world, so strolling into 
-                    the local tavern may arouse suspicion or awe in the patrons who frequent there. Or, you may find that the 
-                    elven guard you're trying to get information from may not be that fond of dwarves.<br></br>
-                    <br></br>
-                    <i>For a better gameplay experience, consider all the aspects of who your character is and try not to rely 
-                    solely on any ability or combat boons.</i>
-                </h3>
-                <h3 className='raceMainIntro'>
-                    
-                </h3>
+                <div className='raceMainIntro'>
+                    <h2>
+                        Choosing your character's race is an important decision that can affect many aspects of your roleplaying 
+                        experience. Not only can your race provide bonuses to your ability in combat or interacting with the 
+                        environment, it may also affect how other players and non-player characters interact with you.
+                    </h2>
+                    <h3>
+                        For instance, Dragonborn may rarely be seen in certain areas of your adventuring world, so strolling into 
+                        the local tavern may arouse suspicion or awe in the patrons who frequent there. Or, you may find that the 
+                        elven guard you're trying to get information from may not be that fond of dwarves.<br></br>
+                        <br></br>
+                        <i>For a better gameplay experience, consider all the aspects of who your character is and try not to rely 
+                        solely on any ability or combat boons.</i>
+                    </h3>
+                </div>
             </div>
             <div className='raceMainBonuses'>
                 <h2>Racial Traits:</h2>

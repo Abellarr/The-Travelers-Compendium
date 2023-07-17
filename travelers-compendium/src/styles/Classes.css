@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.classDispMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.classesMain {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.classDispTitle {
+    color: rgb(74, 48, 16);
+    width: 92%;
+    font-family: 'Permanent Marker', cursive;
+    margin: 15px 0;
+    padding: 0px 10px 20px 10px;
+    border-radius: 5px;
+}
+
+.classDispTitle h1 {
+    font-size: 5em;
+    font-weight: lighter;
+    margin: 0;
+    border-bottom: 5px solid rgb(74, 48, 16);
+}
+
+.classDesc {
+    width: 92%;
+    box-sizing: inherit;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);    
+}
+
+#classDescription p {
+    padding: 0 10px;
+    margin: 10px 0 25px 0;
+}
+
+.classHp {
+    width: 41%;
+    box-sizing: inherit;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);
+}
+
+.classProf {
+    width: 40%;
+    box-sizing: inherit;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);
+}
+
+.classInfoContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+
+.classInfoContainer h2 {
+    margin: 10px 0 ;
+    font-family: 'Piazzolla', serif;
+    font-size: 1.75em;
+    border-bottom: 3px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+    text-align: left;
+    padding-left: 20px;
+}
+
+.classInfoContainer p {
+    font-size: 1.1em;
+    text-align: left;
+    padding-left: 10px;
+    margin: 12px 0;
+}
+
+.classTableDisp {
+    width: 94%;
+    align-items: center;
+    box-sizing: inherit;
+    padding: 10px 10px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);
+}
+
+.classTableDisp h3 {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.75em;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: 3px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+    margin: 10px 0px;
+}
+
+.classTableMain {
+    margin: auto;
+    width: 85%;
+}
+
+.classTableMain th {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.15em;
+    color: rgb(83, 55, 20);
+    border-bottom: 2px solid rgb(83, 55, 20);
+}
+
+.classTableMain td {
+    font-size: 1.1em;
+}
+
+.classTableSpell th {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.1em;
+    color: rgb(83, 55, 20);
+    border-bottom: 2px solid rgb(83, 55, 20);
+}
+
+#profTable1 {
+    width: 10%;
+}
+
+.classSpellHeader {
+    width: 3%;
+}
+
+#classCantrips {
+    width: 8%;
+}
+
+#spellsKnown {
+    width: 8%;
+}
+
+.featureRow {
+    width: 50%;
+}
+
+.classStartEquip {
+    width: 50%;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);
+    /* font-size: 0.9em; */
+}
+
+.classMultiClass {
+    width: 26%;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);
+    /* font-size: 0.9em; */
+}
+
+.classSubClass {
+    width: 19%;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);
+}
+
+.classMCText p {
+    margin: 25px 0 12px 0;
+    text-align: center;
+}
+
+.subClassButton {
+    width: 100%;
+}
+
+.subClassButton p {
+    width: 80%;
+    border-radius: 4px;
+    background-color: burlywood;
+    font-family: 'Piazzolla', serif;
+    text-align: center;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    margin: 25px auto;
+    padding: 6px;
+}
+
+.subClassButton p:hover {
+    cursor: pointer;
+    scale: 110%;
+    background-color: rgb(130, 83, 27);
+    color: rgb(244, 237, 188);
+    transition: scale 0.2s;
+}
+
+.classFeatureContainer {
+    width: 92%;
+    padding: 0 10px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    background-color: rgba(245, 245, 220, 0.7);
+}
+
+.classFeatureContainer h2 {
+    font-size: 3em;
+}
+
+
+.classSpellcasting {
+    width: 96%;
+    margin: 29px auto;
+    font-family: 'Piazzolla', serif;
+    font-size: 1.35em;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+}
+
+.classFeatureContainer h3 {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.75em;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+}
+
+.classFeatureContainer p {
+    padding: 0 20px;
+}
+
+#subClassModal {
+    width: 70%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+    filter: drop-shadow(5px 10px 8px black);
+    background-color: rgba(245, 245, 220, 0.95);
+}
+
+#subClassModal h2 {
+    font-size: 2.5em;
+    border-bottom: none;
+}
+
+#subClassModal h3 {
+    margin: 10px 0;
+    font-family: 'Piazzolla', serif;
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+}
+
+#subClassModal p {
+    width: auto;
+    text-align: left;
+    font-family: 'Noto Serif', serif;
+    margin: 5px 0 10px 0;
+    padding: 5px 10px;
+}
+
+#subClassModal::backdrop, #invocations::backdrop {
+    background-color: rgb(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    /* -webkit-filter: blur(3px); */
+}
+
+.subClassModalButton {
+    border: none;
+    background-color: transparent;
+    color: rgb(83, 55, 20);
+    font-weight: bolder;
+    font-size: 1.65em;
+    cursor: pointer;
+    height: 75%;
+}
+
+.subClassHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid rgb(83, 55, 20);
+    margin-bottom: 15px;
+}
+
+.subClassHeader h2 {
+    margin: 0;
+    font-family: 'Piazzolla', serif;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: 3px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+}
+
+.subClassInfo p {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.subClassInfo p:hover {
+    cursor: auto;
+    scale: 100%;
+    transition: none;
+    background-color: transparent;
+    color: black;
+}
+
+.oathSpells {
+    margin: auto;
+    width: 70%;
+    background-color: rgba(245, 245, 220, 0.7);
+    border: 1px solid rgb(83, 55, 20);
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+}
+
+.oathSpells th {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.15em;
+    color: rgb(83, 55, 20);
+    border-bottom: 2px solid rgb(83, 55, 20);
+}
+
+.circleTables {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.circleTables h3 {
+    width: 95%;
+}
+
+.circleSpells {
+    margin: auto;
+    width: 65%;
+    border: 1px solid rgb(83, 55, 20);
+    border-radius: 8px;
+    background-color: rgba(245, 245, 220, 0.7);
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+}
+
+.circleSpells h4 {
+    width: 90%;
+    margin: 5px auto;
+    font-family: 'Piazzolla', serif;
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 20px;
+    color: rgb(83, 55, 20);
+}
+
+.circleSpells th {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.15em;
+    color: rgb(83, 55, 20);
+    border-bottom: 2px solid rgb(83, 55, 20);
+}
+
+.evenRow {
+    background-color: rgba(240, 222, 187, 0.95);
+}
+
+#invocations {
+    box-sizing: border-box;
+    border: none;
+    width: 75%;
+    height: 85%;
+    border-radius: 6px;
+    filter: drop-shadow(5px 10px 8px black);
+    background-color: rgba(245, 245, 220, 0.95);
+}
+
+#invocations h2 {
+    border-bottom: none;
+}
+
+#invocations h3 {
+    font-family: 'Piazzolla', serif;
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+    border-bottom: 2px solid rgb(83, 55, 20);
+    color: rgb(83, 55, 20);
+}
+
+#invocations p {
+    margin: 0;
+    width: 95%;
+    text-align: left;
+}
+
+/* .subClassHeader {
+    display: flex;
+    flex-direction: column;
+} */
+
+.invoTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 4px solid rgb(83, 55, 20);
+}
+
+#dragonTable {
+    width: 50%;
+}

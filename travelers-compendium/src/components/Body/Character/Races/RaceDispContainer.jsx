@@ -1,8 +1,11 @@
 import React, { useContext, useState, useEffect } from 'react';
+import axios from 'axios';
 import AppContext from '../../../Context/AppContext.jsx';
 import TraitCard from './TraitCard.jsx';
 import Subrace from './Subrace.jsx';
+import DraconicAncestry from './DraconicAncestry.jsx';
 import '../../../../styles/Races.css';
+
 
 
 const RaceDispContainer = ({ raceDisplay }) => {
@@ -17,21 +20,26 @@ const RaceDispContainer = ({ raceDisplay }) => {
         modal.showModal();
     }
 
-    useEffect(() => {
-        (async () => {
-          const response = await fetch(`${apiBase}/api/races/${raceDisplay}`);
-          const race = await response.json();
-          setRaceInfo(race);
-          setTraits(race.traits);
-          setAbilities(race.ability_bonuses)
-          console.log(race);
+    useEffect(()=> {
+        (async ()=> {
+            try {
+                const { data } = await axios.get(`${apiBase}/api/races/${raceDisplay}`);
+                setRaceInfo(data);
+                setTraits(data.traits);
+                setAbilities(data.ability_bonuses)
+                console.log(data);
+            } catch (err) {
+                console.log(err);
+            }
         })();
-        return () => {};
-      }, []);
+        return ()=> {};
+     }, []);
 
     return (
         <div className='raceDispMain'>
-            <h1 className='raceInfoTitle'>{raceInfo.name}</h1>
+            <div className='raceInfoTitle'>
+                <h1>{raceInfo.name}</h1>
+            </div>
             <div className='raceInfoContainer'>
                 <div className='raceAbilities'>
                     <h2>Ability Score Increase</h2>
@@ -73,7 +81,7 @@ const RaceDispContainer = ({ raceDisplay }) => {
                 </div>
                 <div className='raceTraits'>
                     <h2>Traits</h2>
-                    {!traits[0] ? <p>None</p> : null}
+                    {raceInfo.name && !traits[0] ? <p>None</p> : null}
                     {raceInfo.name ? traits.map((trait, ind)=>{
                         return (
                             <div className='traitCardContainer'>
@@ -82,6 +90,7 @@ const RaceDispContainer = ({ raceDisplay }) => {
                             </div>
                         )
                     }) : null}
+                    {raceInfo.index === 'dragonborn' ? <DraconicAncestry /> : null}
                 </div>
             </div>
         </div>
