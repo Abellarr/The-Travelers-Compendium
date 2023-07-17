@@ -59,7 +59,7 @@ const ClassTable = ({ className }) => {
             </tr>}
             {classFeatures.map((feature, ind)=>{
                 return (
-                    <tr key={`classLevel${ind}`}>
+                    <tr className={ind%2===0 ? 'evenRow' : ''}key={`classLevel${ind}`}>
                         <td>{feature.level}</td>
                         <td>+{feature.prof_bonus}</td>
                         {feature.index.includes('monk') ? <td>1d{feature.class_specific.martial_arts.dice_value}</td> : null}

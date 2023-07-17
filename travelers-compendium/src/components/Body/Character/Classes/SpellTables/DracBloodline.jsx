@@ -10,7 +10,7 @@ const DracBloodline = ()=> {
                     <th>Dragon</th>
                     <th>Damage Type</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>Black</td>
                     <td>Acid</td>
                 </tr>
@@ -18,7 +18,7 @@ const DracBloodline = ()=> {
                     <td>Blue</td>
                     <td>Lightning</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>Brass</td>
                     <td>Fire</td>
                 </tr>
@@ -26,7 +26,7 @@ const DracBloodline = ()=> {
                     <td>Bronze</td>
                     <td>Lightning</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>Copper</td>
                     <td>Acid</td>
                 </tr>
@@ -34,7 +34,7 @@ const DracBloodline = ()=> {
                     <td>Gold</td>
                     <td>Fire</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>Green</td>
                     <td>Poison</td>
                 </tr>
@@ -42,7 +42,7 @@ const DracBloodline = ()=> {
                     <td>Red</td>
                     <td>Fire</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>Silver</td>
                     <td>Cold</td>
                 </tr>

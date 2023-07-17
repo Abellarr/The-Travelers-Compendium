@@ -12,7 +12,7 @@ const CircleSpells = ()=> {
                     <th>Druid Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>3rd</td>
                     <td>Hold Person, Spike Growth</td>
                 </tr>
@@ -20,7 +20,7 @@ const CircleSpells = ()=> {
                     <td>5th</td>
                     <td>Sleet Storm, Slow</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>7th</td>
                     <td>Freedom of Movement, Ice Storm</td>
                 </tr>
@@ -35,7 +35,7 @@ const CircleSpells = ()=> {
                     <th>Druid Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>3rd</td>
                     <td>Mirror Image, Misty Step</td>
                 </tr>
@@ -43,7 +43,7 @@ const CircleSpells = ()=> {
                     <td>5th</td>
                     <td>Water Breathing, Water Walk</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>7th</td>
                     <td>Control Water, Freedom of Movement</td>
                 </tr>
@@ -58,7 +58,7 @@ const CircleSpells = ()=> {
                     <th>Druid Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>3rd</td>
                     <td>Blur, Silence</td>
                 </tr>
@@ -66,7 +66,7 @@ const CircleSpells = ()=> {
                     <td>5th</td>
                     <td>Create Food and Water, Protection from Energy</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>7th</td>
                     <td>Blight, Hallucinatory Terrain</td>
                 </tr>
@@ -81,7 +81,7 @@ const CircleSpells = ()=> {
                     <th>Druid Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>3rd</td>
                     <td>Barkskin, Spider Climb</td>
                 </tr>
@@ -89,7 +89,7 @@ const CircleSpells = ()=> {
                     <td>5th</td>
                     <td>Call Lightning, Plant Growth</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>7th</td>
                     <td>Divination, Freedom of Movement</td>
                 </tr>
@@ -104,7 +104,7 @@ const CircleSpells = ()=> {
                     <th>Druid Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>3rd</td>
                     <td>Invisibility, Pass Without Trace</td>
                 </tr>
@@ -112,7 +112,7 @@ const CircleSpells = ()=> {
                     <td>5th</td>
                     <td>Daylight, Haste</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>7th</td>
                     <td>Divination, Freedom of Movement</td>
                 </tr>
@@ -127,7 +127,7 @@ const CircleSpells = ()=> {
                     <th>Druid Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>3rd</td>
                     <td>Spider Climb, Spike Growth</td>
                 </tr>
@@ -135,7 +135,7 @@ const CircleSpells = ()=> {
                     <td>5th</td>
                     <td>Lightning Bolt, Meld Into Stone</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>7th</td>
                     <td>Stone Shape, Stoneskin</td>
                 </tr>
@@ -150,7 +150,7 @@ const CircleSpells = ()=> {
                     <th>Druid Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>3rd</td>
                     <td>Acid Arrow, Darkness</td>
                 </tr>
@@ -158,7 +158,7 @@ const CircleSpells = ()=> {
                     <td>5th</td>
                     <td>Water Walk, Stinking Cloud</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>7th</td>
                     <td>Freedom of Movement, Locate Creature</td>
                 </tr>

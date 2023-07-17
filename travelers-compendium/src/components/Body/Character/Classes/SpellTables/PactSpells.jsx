@@ -11,7 +11,7 @@ const PactSpells = ()=> {
                     <th>Spell Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>1st</td>
                     <td>Burning Hands, Command</td>
                 </tr>
@@ -19,7 +19,7 @@ const PactSpells = ()=> {
                     <td>2nd</td>
                     <td>Blindness/Deafness, Scorching Ray</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>3rd</td>
                     <td>Fireball, Stinking Cloud</td>
                 </tr>
@@ -27,7 +27,7 @@ const PactSpells = ()=> {
                     <td>4th</td>
                     <td>Fire Shield, Wall of Fire</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>5th</td>
                     <td>Flame Strike, Hallow</td>
                 </tr>

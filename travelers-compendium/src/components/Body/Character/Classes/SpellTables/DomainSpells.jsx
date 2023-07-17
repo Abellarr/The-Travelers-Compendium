@@ -11,7 +11,7 @@ const DomainSpells = ()=> {
                     <th>Cleric Level</th>
                     <th>Spells</th>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>1st</td>
                     <td>Bless, Cure Wounds</td>
                 </tr>
@@ -19,7 +19,7 @@ const DomainSpells = ()=> {
                     <td>3rd</td>
                     <td>Lesser Restoration, Spiritual Weapon</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>5th</td>
                     <td>Beacon of Hope, Revivify</td>
                 </tr>
@@ -27,7 +27,7 @@ const DomainSpells = ()=> {
                     <td>7th</td>
                     <td>Death Ward, Guardian of Faith</td>
                 </tr>
-                <tr>
+                <tr className='evenRow'>
                     <td>9th</td>
                     <td>Mass Cure Wounds, Raise Dead</td>
                 </tr>

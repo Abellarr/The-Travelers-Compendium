@@ -324,7 +324,7 @@
 .oathSpells {
     margin: auto;
     width: 70%;
-    background-color: rgba(240, 222, 187, 0.95);
+    background-color: rgba(245, 245, 220, 0.7);
     border: 1px solid rgb(83, 55, 20);
     border-radius: 8px;
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
@@ -353,7 +353,7 @@
     width: 65%;
     border: 1px solid rgb(83, 55, 20);
     border-radius: 8px;
-    background-color: rgba(240, 222, 187, 0.95);
+    background-color: rgba(245, 245, 220, 0.7);
     box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
 }
 
@@ -372,6 +372,10 @@
     font-size: 1.15em;
     color: rgb(83, 55, 20);
     border-bottom: 2px solid rgb(83, 55, 20);
+}
+
+.evenRow {
+    background-color: rgba(240, 222, 187, 0.95);
 }
 
 #invocations {

@@ -10,7 +10,7 @@ const DraconicAncestry = () => {
                 <th>Damage Type</th>
                 <th>Breath Weapon</th>
             </tr>
-            <tr>
+            <tr className='evenRow'>
                 <td>Black</td>
                 <td>Acid</td>
                 <td>5 by 30 ft. line</td>
@@ -20,7 +20,7 @@ const DraconicAncestry = () => {
                 <td>Lightning</td>
                 <td>5 by 30 ft. line</td>
             </tr>
-            <tr>
+            <tr className='evenRow'>
                 <td>Brass</td>
                 <td>Fire</td>
                 <td>5 by 30 ft. line</td>
@@ -30,7 +30,7 @@ const DraconicAncestry = () => {
                 <td>Lightning</td>
                 <td>5 by 30 ft. line</td>
             </tr>
-            <tr>
+            <tr className='evenRow'>
                 <td>Copper</td>
                 <td>Acid</td>
                 <td>5 by 30 ft. line</td>
@@ -40,7 +40,7 @@ const DraconicAncestry = () => {
                 <td>Fire</td>
                 <td>15 ft. cone</td>
             </tr>
-            <tr>
+            <tr className='evenRow'>
                 <td>Green</td>
                 <td>Poison</td>
                 <td>15 ft. cone</td>
@@ -50,7 +50,7 @@ const DraconicAncestry = () => {
                 <td>Fire</td>
                 <td>15 ft. cone</td>
             </tr>
-            <tr>
+            <tr className='evenRow'>
                 <td>Silver</td>
                 <td>Cold</td>
                 <td>15 ft. cone</td>
