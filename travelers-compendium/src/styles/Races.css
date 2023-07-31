@@ -75,9 +75,10 @@
 }
 
 .raceMainBonuses h3 {
-    font-family: 'Piazzolla', serif;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
     color: rgb(83, 55, 20);
-    font-size: 1.25em;
+    font-size: 1.5em;
     border-bottom: 2px solid rgb(83, 55, 20);
 }
 
@@ -172,7 +173,8 @@
 
 .raceInfoContainer h2 {
     margin: 10px 0 ;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
     font-size: 1.75em;
     border-bottom: 3px solid rgb(83, 55, 20);
     color: rgb(83, 55, 20);
@@ -216,8 +218,9 @@
 }
 
 .raceTraits h2 {
-    font-family: 'Piazzolla', serif;
-    font-size: 2.5em;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 3em;
     padding-bottom: 10px;
     border-bottom: 3px solid rgb(83, 55, 20);
     color: rgb(83, 55, 20);
@@ -333,8 +336,9 @@
     flex-direction: column;
     justify-content: space-around;
     margin: 10px 0;
-    font-family: 'Piazzolla', serif;
-    font-size: 1.5em;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 2em;
     padding: 0 0 0 15px;
     border-bottom: 2px solid rgb(83, 55, 20);
     color: rgb(83, 55, 20);

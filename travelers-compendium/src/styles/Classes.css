@@ -74,8 +74,9 @@
 
 .classInfoContainer h2 {
     margin: 10px 0 ;
-    font-family: 'Piazzolla', serif;
-    font-size: 1.75em;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 2em;
     border-bottom: 3px solid rgb(83, 55, 20);
     color: rgb(83, 55, 20);
     text-align: left;
@@ -100,8 +101,9 @@
 }
 
 .classTableDisp h3 {
-    font-family: 'Piazzolla', serif;
-    font-size: 1.75em;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 2em;
     text-align: left;
     padding-left: 20px;
     border-bottom: 3px solid rgb(83, 55, 20);
@@ -231,8 +233,9 @@
 }
 
 .classFeatureContainer h3 {
-    font-family: 'Piazzolla', serif;
-    font-size: 1.75em;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 1.8em;
     text-align: left;
     padding-left: 10px;
     border-bottom: 2px solid rgb(83, 55, 20);
@@ -300,7 +303,8 @@
 
 .subClassHeader h2 {
     margin: 0;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
     text-align: left;
     padding-left: 20px;
     border-bottom: 3px solid rgb(83, 55, 20);
@@ -389,6 +393,7 @@
 }
 
 #invocations h2 {
+    font-size: 2.75em;
     border-bottom: none;
 }
 
@@ -396,7 +401,7 @@
     font-family: 'Piazzolla', serif;
     font-size: 1.5em;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 15px;
     margin: 0;
     border-bottom: 2px solid rgb(83, 55, 20);
     color: rgb(83, 55, 20);

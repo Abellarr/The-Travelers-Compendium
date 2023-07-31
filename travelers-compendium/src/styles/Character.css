@@ -24,19 +24,20 @@
     box-sizing: border-box;
     padding: 10px;
     text-align: left;
-    
 }
 
 .abilityScoresCard h3 {
     margin: 0;
     padding-left: 12px;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
     font-size: 2.5em;
     color: rgb(74, 48, 16);
     border-bottom: 3px solid rgb(74, 48, 16);
 }
 
 .abilityScoresCard h4 {
+    margin: 10px 0;
     font-size: 1.15em;
     color: rgb(74, 48, 16);
 }
@@ -125,6 +126,43 @@
     background-color: rgba(240, 222, 187, 0.95);
 }
 
-/* .tableRight {
-    border-right: 2px solid rgb(83, 55, 20);
-} */
+.alignmentHeader {
+    font-size: 2em;
+}
+
+.languageContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.languagesCard {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+}
+
+.languagesCard h3 {
+    margin: 0;
+    padding-left: 12px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 2em;
+    color: rgb(74, 48, 16);
+    border-bottom: 3px solid rgb(74, 48, 16);
+}
+
+.langHeader {
+    width: 96%;
+    margin: 0 0 40px 0;
+    padding-left: 12px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 3.5em;
+    text-align: left;
+    color: rgb(74, 48, 16);
+    border-bottom: 3px solid rgb(74, 48, 16);
+}

@@ -46,7 +46,7 @@ const ClassesMain = () => {
                 <h3>Proficiencies</h3>
                 <p>Your character's proficiencies show what armor, weapons, tools, saving throws, and skills your character 
                     is adept at using, and they will generally add their proficiency bonus to when used.</p>
-                <h3>Recommended Starting Equipment</h3>
+                <h3>Starting Equipment</h3>
                 <p>This section highlights recommendations for your equipment at level 1, based on class and starting proficiencies. 
                     Depending on any proficiencies given by your race or any feats you may have, you may want to start out with
                     different equipment, with permission from the Dungeon Master (DM).</p>

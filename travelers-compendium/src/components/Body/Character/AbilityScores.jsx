@@ -1,23 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
-import axios from 'axios';
-import AppContext from '../../Context/AppContext.jsx';
-import UnderConstruction from '../UnderConstruction.jsx';
-import '../../../styles/Character.css';
+import React, { useState } from 'react';
 import AbilityScoresCard from './AbilityScoresCard.jsx';
+import '../../../styles/Character.css';
+
 
 const AbilityScores = () => {
     const [ abiScores, setAbiScores ] = useState(['str', 'dex', 'con', 'int', 'wis', 'cha']);
-    // const { apiBase } = useContext(AppContext);
-
-    // useEffect(() => {
-    //     (async () => {
-    //       const { data } = await axios.get(`${apiBase}/api/ability-scores`);
-    //       setAbiScores(data.results);
-    //       console.log(data.results);
-    //     })();
-    //     return () => {};
-    //   }, []);
-
 
 
     return (
